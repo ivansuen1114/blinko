@@ -85,7 +85,7 @@ docker run -d \
   -e DATABASE_URL=postgresql://postgres:mysecretpassword@blinko-postgres:5432/postgres \
   $volume_mount \
   --restart always \
-  blinkospace/blinko:latest
+  blinkospace/blinko:1.3.0
 
 if [ $? -ne 0 ]; then
   echo -e "${RED}Failed to start BlinkOS container.${NC}"
